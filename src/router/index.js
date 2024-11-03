@@ -1,7 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import ExBoyfriend from '../views/ExBoyfriend.vue'
-import ExGirlfriend from '../views/ExGirlfriend.vue'
-import Home from '../views/Home.vue'
+import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -9,19 +6,32 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: () => import('../views/Home.vue')
     },
     {
-      path: '/ex-boyfriend',
-      name: 'ex-boyfriend',
-      component: ExBoyfriend
+      path: '/exnovio',
+      name: 'exnovio',
+      component: () => import('../views/ExBoyfriend.vue')
     },
     {
-      path: '/ex-girlfriend',
-      name: 'ex-girlfriend',
-      component: ExGirlfriend
+      path: '/exnovia',
+      name: 'exnovia',
+      component: () => import('../views/ExGirlfriend.vue')
+    },
+    {
+      path: '/comentarios',
+      name: 'comments',
+      component: () => import('../views/CommentsSectionView.vue')
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: () => import('../views/AboutView.vue')
     }
-  ]
-})
+  ],
+  scrollBehavior() {
+    return { top: 0 };
+  }
+});
 
-export default router
+export default router;
