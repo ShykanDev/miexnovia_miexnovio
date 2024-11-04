@@ -27,7 +27,7 @@
                 </nav>
             </div>
         </header>
-        <main class="mt-12 font-poppins">
+        <main class="mt-12 overflow-hidden font-poppins">
             <slot name="main">
                 
             </slot>
