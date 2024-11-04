@@ -42,13 +42,7 @@
                               </p>
                           </div>
 
-                          <!-- Tarjeta 5 -->
-                          <div class="p-6 bg-white rounded-lg shadow-lg" data-aos="fade-right">
-                              <h3 class="mb-2 text-xl font-semibold text-orange-800">Asesoría Profesional</h3>
-                              <p class="text-gray-600">
-                                  Contamos con un equipo de profesionales dispuestos a ofrecer asesoría sobre cómo manejar relaciones y problemas financieros.
-                              </p>
-                          </div>
+
 
                           <!-- Tarjeta 6 -->
                           <div class="p-6 bg-white rounded-lg shadow-lg" data-aos="fade-left">
@@ -59,12 +53,6 @@
                           </div>
 
                           <!-- Tarjeta 7 -->
-                          <div class="p-6 bg-white rounded-lg shadow-lg" data-aos="fade-right">
-                              <h3 class="mb-2 text-xl font-semibold text-orange-800">Recursos Comunitarios</h3>
-                              <p class="text-gray-600">
-                                  Facilitamos acceso a recursos comunitarios que apoyan a quienes están en situaciones difíciles o vulnerables.
-                              </p>
-                          </div>
 
                           <!-- Tarjeta 8 -->
                           <div class="p-6 bg-white rounded-lg shadow-lg" data-aos="fade-left">
@@ -76,9 +64,9 @@
 
                           <!-- Tarjeta 9 -->
                           <div class="p-6 bg-white rounded-lg shadow-lg" data-aos="fade-right">
-                              <h3 class="mb-2 text-xl font-semibold text-orange-800">Espacio Seguro</h3>
+                              <h3 class="mb-2 text-xl font-semibold text-orange-800">Información sobre tácticas manipuladoras</h3>
                               <p class="text-gray-600">
-                                  Creamos un espacio seguro donde las personas pueden compartir sus experiencias y encontrar apoyo sin juicios.
+                                Un común denominador de las relaciónes de parejas que acabaron mal, es que todas empezaron con palabras dulces, promesas y "amor", buscamos ayudarte a reconocer cuando es real y cuando hay intenciones malas.
                               </p>
                           </div>
 

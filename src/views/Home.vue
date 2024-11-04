@@ -18,26 +18,31 @@
 
         <div class="relative flex flex-col items-center justify-center w-full gap-2 text-white min-h-min h-dvh">
           <article
-            class="fixed top-0 bottom-0 flex flex-col items-center text-center justify-center text-2xl w-full h-[800px] overflow-hidden space-y-28 -z-10 bg-black bg-opacity-25">
+                class="fixed top-0 bottom-0 flex flex-col items-center text-center justify-center text-xl md:text-2xl w-full h-[800px] lg:h-dvh overflow-hidden space-y-14 lg:space-y-0 lg:justify-around lg:items-center lg:pt-7 -z-10 bg-black bg-opacity-25">
 
-            <p class="w-3/4 text-center animate-fade-left">
+            <p class="w-3/4 text-center animate-fade-left lg:text-3xl">
               Estafas, mentiras, engaños... todo comienza sutilmente.
             </p>
 
-            <p class="w-3/4 text-center animate-fade-right animate-delay-300">
+            <p class="w-3/4 text-center animate-fade-right animate-delay-300 lg:text-3xl">
               Cuidado con las promesas vacías y los compromisos sin bases.
             </p>
 
-            <p class="w-3/4 text-center animate-fade-left animate-delay-600">
+            <p class="w-3/4 text-center animate-fade-left animate-delay-600 lg:text-3xl lg:animate-delay-700">
               Aprende a como protegerte
             </p>
 
           </article>
 
-          <img :class="{ 'opacity-100': showImgWomen, 'opacity-0': !showImgWomen }" class="fixed top-0 transition-opacity ease-in-out duration-700 left-0 right-0 bottom-0 h-[800px] -z-20"
+          <img :class="{ 'opacity-100': showImgWomen, 'opacity-0': !showImgWomen }" class="fixed top-0 transition-opacity ease-in-out duration-700 left-0 right-0 bottom-0 h-[800px] -z-20 md:hidden lg:hidden w-full"
             src="../assets/img/mujerMain.jpg" alt="">
-          <img :class="{ 'opacity-100': showImgMen, 'opacity-0': !showImgMen }" class="fixed top-0 transition-opacity ease-in-out duration-700 left-0 right-0 bottom-0 h-[800px] -z-20"
+          <img :class="{ 'opacity-100': showImgMen, 'opacity-0': !showImgMen }" class="w-full fixed md:hidden lg:hidden top-0 transition-opacity ease-in-out duration-700 left-0 right-0 bottom-0 h-[800px] -z-20"
             src="../assets/img/hombreMainM.jpg" alt="">
+          <img :class="{ 'opacity-100': showImgMen, 'opacity-0': !showImgMen }" class="fixed top-0 transition-opacity ease-in-out duration-700 left-0 right-0 bottom-0 h-[800px] -z-20 lg:w-full hidden md:block md:fixed lg:fixed"
+            src="../assets/img/coupleHappyL01.jpg" alt=""> 
+          
+          <img :class="{ 'opacity-100': !showImgMen, 'opacity-0': showImgMen }" class="fixed top-0 transition-opacity ease-in-out duration-700 left-0 right-0 bottom-0 h-[800px] -z-20 lg:w-full hidden md:block md:fixed lg:fixed"
+            src="../assets/img/coupleSadL002.jpg" alt=""> 
         </div>
 
         <section class="z-20 bg-white">
@@ -278,6 +283,36 @@
 
 
 </div>
+<h3 class="mt-6 text-2xl font-bold text-center text-sky-900 font-poppins">Te puede interesar...</h3>
+<section class="flex justify-center w-full my-6 space-x-4"> <!-- ads section -->
+  <div class="relative flex items-center justify-center w-1/2 p-4 border-2 rounded-lg shadow-md border-slate-400 bg-slate-100">
+    <span class="absolute px-2 py-1 text-sm font-semibold text-white rounded -top-4 left-4 bg-slate-500">Anuncio</span>
+    <a href="https://miarrendador.com/index.php" class="relative w-full h-full" target="_blank" rel="noopener noreferrer">
+      <div class="absolute flex flex-col items-center w-full h-full transition-opacity duration-300 ease-out bg-black opacity-0 hover:opacity-70 justify-evenly">
+        <p class="text-xs font-bold text-center text-white font-poppins md:text-3xl"></p>
+        <p class="text-sm font-bold text-center text-white font-poppins md:text-3xl">Te guiamos a la mejor toma de decisiones al rentar un inmueble</p>
+      </div>
+      <img class="w-full h-full bg-contain rounded-md" src="../assets/img/lendAd.jpg" alt="">
+      <p class="absolute text-xs font-bold text-center text-slate-800 top-1 font-poppins md:text-3xl">¿Necesitas un arrendatario?</p>
+      <p class="absolute text-xs font-bold text-center text-slate-800 bottom-1 font-poppins md:text-3xl">¿Eres un arrendador?</p>
+    </a>
+  </div>
+
+  <div class="relative flex items-center justify-center w-1/2 p-4 border-2 rounded-lg shadow-md border-slate-400 bg-slate-100">
+    <span class="absolute px-2 py-1 text-sm font-semibold text-white rounded -top-4 left-4 bg-slate-500">Anuncio</span>
+    <a href="https://chyawanprash.com.mx/index.html" class="relative w-full h-full" target="_blank" rel="noopener noreferrer">
+      <div class="absolute flex flex-col items-center w-full h-full transition-opacity duration-300 ease-out bg-black opacity-0 hover:opacity-70 justify-evenly">
+        <p class="text-sm font-bold text-center text-white font-poppins md:text-3xl">Usala con tu alimentos favoritos</p>
+        <p class="text-sm font-bold text-center text-white font-poppins md:text-3xl">Multivitaminico</p>
+        <p class="hidden text-sm font-bold text-center text-white font-poppins md:text-3xl md:block">100% natural</p>
+      </div>
+      <img class="w-full h-full bg-contain rounded-md" src="../assets/img/cyanAd.png" alt="">
+      <p class="absolute top-0 text-xs font-bold text-center text-white font-poppins md:text-3xl">Mermelada oscura</p>
+      <p class="absolute px-3 text-xs font-bold text-center text-white md:px-0 bottom-3 font-poppins md:text-3xl">Rejuvenecedor</p>
+    </a>
+  </div>
+</section>
+
 
           </div>
         </section>

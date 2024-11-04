@@ -3,7 +3,7 @@
         <header>
             <div class="w-full overflow-hidden font-poppins">
                 <nav class="fixed z-50 w-full text-black bg-white">
-                    <a class="absolute right-0 z-50" href="https://www.prasadam.mx">
+                    <a class="absolute z-50 w-6 lg:top-2 lg:right-0 right-2 lg:w-auto" href="https://www.prasadam.mx">
                         <img class="w-8 " src="../assets/img/logoPrasadam.png" alt="">
                     </a>
                     <div class="px-1 py-1 mx-auto ">
@@ -31,7 +31,8 @@
             <slot name="main">
                 
             </slot>
-            <div class="py-6 text-white rounded-lg shadow-md bg-slate-800 px-7">
+            <div class="relative py-6 text-white rounded-lg shadow-md bg-slate-800 px-7">
+                <img src="../assets/img/sslCert01.png" class="absolute w-20 top-2 right-1" alt="">
   <h3 class="mb-4 text-3xl font-bold text-left text-orange-400">Contacto</h3>
 
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
