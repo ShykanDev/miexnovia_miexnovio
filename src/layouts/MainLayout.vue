@@ -2,7 +2,7 @@
     <div class="">
         <header>
             <div class="w-full overflow-hidden font-poppins">
-                <nav class="fixed z-50 w-full text-black bg-white">
+                <nav class="fixed z-50 w-full text-black bg-white shadow-md">
                     <a class="absolute z-50 w-6 lg:top-2 lg:right-0 right-2 lg:w-auto" href="https://www.prasadam.mx">
                         <img class="w-8 " src="../assets/img/logoPrasadam.png" alt="">
                     </a>
