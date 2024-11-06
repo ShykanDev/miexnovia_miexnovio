@@ -30,7 +30,7 @@
                                         <router-link :to="{name: 'register'}" class="px-2 py-1 text-white bg-orange-600 rounded-md ">Registrarse</router-link>
                                     </div>
                                     <div v-if="useUserLogin().getUser" class="flex items-center gap-1">
-                                        <p>¡Bienvenido!</p>
+                                        <p>Hola, {{ useUserInfo().getUserName }}!</p>
                                     </div>
                             </div>
                         </div>
@@ -98,6 +98,7 @@ import { useRoute } from 'vue-router';
 const route = useRoute();
 import { onMounted, ref } from 'vue';
 import { useUserLogin } from '../stores/UserLogin';
+import { useUserInfo } from '../stores/UserInfo';
 
 
 const title1 = ref();

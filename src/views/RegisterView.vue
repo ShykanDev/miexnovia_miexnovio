@@ -116,6 +116,8 @@ import { ref } from 'vue';
 import MainLayout from '../layouts/MainLayout.vue';
 import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
 import { useUserLogin } from '../stores/UserLogin';
+import { useUserInfo } from '../stores/UserInfo';
+// import { useUserInfo } from '../stores/UserInfo';
 
 const auth = getAuth();
 const name = ref('');
@@ -136,7 +138,7 @@ const storeUser = useUserLogin();
 
 // Expresiones regulares para validación
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
+const userInfoStore = useUserInfo();
 const handleSubmit = async () => {
   // Reiniciar errores
   errors.value = {
@@ -161,7 +163,8 @@ const handleSubmit = async () => {
           const userCredential = await createUserWithEmailAndPassword(auth, email.value, password.value);
           const user = userCredential.user;
           if (user) {
-            storeUser.setUser(name.value);
+            // storeUser.setUser(name.value);
+            userInfoStore.setUserName(name.value);
               console.log('Usuario registrado:', user);
               alert('Registro exitoso');
               // Aquí puedes enviar los datos a tu API o backend

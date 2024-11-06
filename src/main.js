@@ -8,6 +8,7 @@ import { OhVueIcon, addIcons } from "oh-vue-icons";
 import { FaFlag, RiZhihuFill, FaPhoneAlt, HiMail, LaWhatsapp, IoLocation,BiPencilFill,FaUserAlt,IoCalendar } from "oh-vue-icons/icons";
 import { initializeApp } from "firebase/app";
 import { createPinia } from 'pinia';
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
 // Initialize AOS
 AOS.init();
@@ -30,7 +31,7 @@ initializeApp(firebaseConfig);
 
 // Create Pinia instance
 const pinia = createPinia();
-
+pinia.use(piniaPluginPersistedstate)
 // Create Vue app
 const appVue = createApp(App);
 
