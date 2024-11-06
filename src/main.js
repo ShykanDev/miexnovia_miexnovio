@@ -5,7 +5,7 @@ import router from './router';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { FaFlag, RiZhihuFill, FaPhoneAlt, HiMail, LaWhatsapp, IoLocation } from "oh-vue-icons/icons";
+import { FaFlag, RiZhihuFill, FaPhoneAlt, HiMail, LaWhatsapp, IoLocation,BiPencilFill,FaUserAlt,IoCalendar } from "oh-vue-icons/icons";
 import { initializeApp } from "firebase/app";
 import { createPinia } from 'pinia';
 
@@ -13,7 +13,7 @@ import { createPinia } from 'pinia';
 AOS.init();
 
 // Add icons to Oh Vue Icons
-addIcons(FaFlag, RiZhihuFill, FaPhoneAlt, HiMail, LaWhatsapp, IoLocation);
+addIcons(FaFlag, RiZhihuFill, FaPhoneAlt, HiMail, LaWhatsapp, IoLocation,BiPencilFill,FaUserAlt,IoCalendar);
 
 // Firebase configuration
 const firebaseConfig = {

@@ -15,12 +15,23 @@
                             <div class="z-40 flex items-baseline w-full mt-2 font-medium bg-white justify-evenly font-poppins">
                                 <router-link :class="{ 'bg-emerald-600 text-white': route.name === 'home', 'text-gray-700 hover:text-white hover:bg-emerald-500': route.name !== 'home' }" :to="{name: 'home'}"
                                     class="px-2 py-1 rounded-md autofill: ">Inicio</router-link>
-                                <router-link :class="{ 'bg-purple-600 text-white': route.name === 'exnovia', 'text-gray-700 hover:text-white hover:bg-purple-500': route.name !== 'exnovia' }" :to="{name: 'exnovia'}"
-                                    class="px-2 py-1 rounded-md autofill: ">Exnovia</router-link>
-                                <router-link  :class="{ 'bg-sky-800 text-white': route.name === 'exnovio', 'text-gray-700 hover:text-white hover:bg-sky-500': route.name !== 'exnovio' }"  :to="{name: 'exnovio'}"
-                                    class="px-2 py-1 rounded-md autofill: ">Exnovio</router-link>
-                                    <router-link :class="{ 'bg-orange-600 text-white': route.name === 'about', 'text-gray-700 hover:text-white hover:bg-orange-500': route.name !== 'exnovia' }" :to="{name: 'about'}"
-                                    class="px-2 py-1 rounded-md autofill: ">Nosotros</router-link>
+                                    <div class="flex items-center gap-1">
+                                        <router-link :class="{ 'bg-purple-600 text-white': route.name === 'exnovia', 'text-gray-700 hover:text-white hover:bg-purple-500': route.name !== 'exnovia' }" :to="{name: 'exnovia'}"
+                                        class="px-2 py-1 rounded-md autofill: ">Exnovia</router-link>
+                                        <router-link  :class="{ 'bg-sky-800 text-white': route.name === 'exnovio', 'text-gray-700 hover:text-white hover:bg-sky-500': route.name !== 'exnovio' }"  :to="{name: 'exnovio'}"
+                                        class="px-2 py-1 rounded-md autofill: ">Exnovio</router-link>
+                                        <router-link :class="{ 'bg-orange-600 text-white': route.name === 'about', 'text-gray-700 hover:text-white hover:bg-orange-500': route.name !== 'exnovia' }" :to="{name: 'about'}"
+                                        class="px-2 py-1 rounded-md autofill: ">Nosotros</router-link>
+                                        <router-link :class="{ 'bg-rose-600 text-white': route.name === 'comments', 'text-gray-700 hover:text-white hover:bg-rose-500': route.name !== 'comments' }" :to="{name: 'comments'}"
+                                        class="px-2 py-1 rounded-md autofill: ">Comentarios</router-link>
+                                    </div>
+                                    <div v-if="!useUserLogin().getUser" class="flex items-center gap-1 ">
+                                        <router-link :to="{name: 'login'}" class="px-2 py-1 border border-gray-500 rounded-md ">Iniciar sesión</router-link>
+                                        <router-link :to="{name: 'register'}" class="px-2 py-1 text-white bg-orange-600 rounded-md ">Registrarse</router-link>
+                                    </div>
+                                    <div v-if="useUserLogin().getUser" class="flex items-center gap-1">
+                                        <p>¡Bienvenido!</p>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -86,6 +97,7 @@
 import { useRoute } from 'vue-router';
 const route = useRoute();
 import { onMounted, ref } from 'vue';
+import { useUserLogin } from '../stores/UserLogin';
 
 
 const title1 = ref();

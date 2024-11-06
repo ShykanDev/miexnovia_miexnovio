@@ -15,32 +15,63 @@
 
 
         <!-- </div> -->
-        <div class="flex justify-around w-full text-center bg-white lg:pt-16">
-          
-          <div>
-            <h3 class="text-3xl">Comparte, conoce y aprende de las experiencias de otros</h3>
-            <h3 class="mb-3">Conoce sobre como las relaciones pasadas, 
-              <strong>
-                dejaron en problemas 
-              </strong>
-              a muchos</h3>
-            <h3 class="mb-3">Conoce como las parejas, tienden a estafar dejando 
-              <strong>
-                en problemas, económicos, fraudes, abuso emocional
-              </strong>
-               entre muchos problemas más.</h3>
-            <h3>
-              <strong>
-                Comparte tus experiencias
-              </strong>
-              , con tus relaciones que te dejaron en problemas</h3>
+        <div class="py-3 pt-10 slider">
+          <div class="gap-2 slide-track">
+            <CommentExampleCard nameAge="Lucas" title="El amor se disfrazó de interés, y perdí más que mi corazón."
+              :img="h1Image" />
+            <CommentExampleCard nameAge="Danilo"
+              title="La amé con todo mi ser, pero ella solo buscaba lo que podía ofrecerle." :img="h2Image" />
+            <CommentExampleCard nameAge="Fernando"
+              title="Desgasté mi corazón y mi cuenta bancaria por un amor que nunca existió." :img="h3Image" />
+            <CommentExampleCard nameAge="Oscar"
+              title="Su sonrisa me cautivó, pero su corazón solo tenía espacio para el dinero." :img="h4Image" />
+            <CommentExampleCard nameAge="Karla" title="Soñé con un futuro juntos, pero él solo quería mi dinero."
+              :img="m0Image" />
+            <CommentExampleCard nameAge="Daniela"
+              title="Creí en su cuento de hadas, pero al final solo había un castillo de deudas." :img="m1Image" />
+            <CommentExampleCard nameAge="Jessica" title="Me entregué a un amor falso y perdí mi hogar en el proceso."
+              :img="m2Image" />
+            <CommentExampleCard nameAge="Camila"
+              title="Un romance de verano que se convirtió en una pesadilla financiera." :img="m3Image" />
+
           </div>
-            <img class="rounded-md" src="../assets/img/husbandFight.webp" alt="">
+        </div>
+
+        <div class="flex justify-around w-full pt-6 text-center bg-white lg:pt-16">
+
+          <div>
+            <h3 class="mb-5 text-3xl font-medium px-7 text-sky-950">
+              <span class="text-white bg-emerald-800">
+                Comparte, descubre y aprende</span>
+               de las experiencias de otros en relaciones amorosas que dejaron profundas
+              cicatrices.
+            </h3>
+            <h3 class="mb-3 text-sky-900">
+              Descubre cómo relaciones pasadas
+              dejaron a muchos en problemas, desde
+              <strong class="">
+                pérdidas financieras</strong>
+                hasta
+                <strong class="">
+                  traumas emocionales.
+                </strong>
+                
+            </h3>
+            <h3 class="mb-3 text-sky-800">
+              Conoce cómo algunas parejas utilizan el amor como herramienta para
+              <strong>estafar y manipular</strong>, dejando tras de sí deudas, fraudes y secuelas emocionales.
+            </h3>
+            <h3 class="mb-3 text-sky-800">
+              <strong class="text-white bg-sky-800">Comparte tus propias experiencias con los demás</strong> y ayuda a otros a prevenir relaciones que pueden traer
+              consecuencias graves.
+            </h3>
+          </div>
+          <img class="rounded-md" src="../assets/img/husbandFight.webp" alt="">
         </div>
         <div class="relative w-dvw">
         </div>
         <!-- <div class="relative flex flex-col items-center justify-center w-full gap-2 text-white min-h-min h-dvh"> -->
-         <!-- <video src="../assets/img/HusbandCompress.mp4"  autoplay loop></video> -->
+        <!-- <video src="../assets/img/HusbandCompress.mp4"  autoplay loop></video> -->
         <!-- </div> -->
         <!-- <div class="relative flex flex-col items-center justify-center w-full gap-2 text-white min-h-min h-dvh">
           <article
@@ -92,152 +123,15 @@
                 protegerte de estos comportamientos dañinos que pueden afectar tu estabilidad financiera y emocional.
               </p>
             </div>
-            <div class="p-8 space-y-6 bg-slate-50">
-              <figure class="p-8 md:flex bg-slate-100 rounded-xl md:p-0 ">
-                <img class="w-24 h-24 mx-auto rounded-full md:w-48 md:h-auto md:rounded-none" src="../assets/img/m1.jpg"
-                  alt="Perfil de persona estafada" width="384" height="512">
-                <div class="pt-6 space-y-4 text-center md:p-8 md:text-left">
-                  <blockquote>
-                    <p class="text-lg font-medium">
-                      “Mi exnovio me convenció de invertir en un negocio que nunca existió. Durante meses, me decía que
-                      todo iba bien mientras gastaba el dinero en sus placeres. Cuando me di cuenta de la verdad, ya
-                      había perdido más de $30,000.”
-                    </p>
-                  </blockquote>
-                  <figcaption class="font-medium">
-                    <div class="text-sky-500 dark:text-sky-400">Laura G.</div>
-                  </figcaption>
-                </div>
-              </figure>
 
-              <figure class="p-8 md:flex bg-slate-100 rounded-xl md:p-0 ">
-                <img class="w-24 h-24 mx-auto rounded-full md:w-48 md:h-auto md:rounded-none" src="../assets/img/h1.jpg"
-                  alt="Perfil de persona estafada" width="384" height="512">
-                <div class="pt-6 space-y-4 text-center md:p-8 md:text-left">
-                  <blockquote>
-                    <p class="text-lg font-medium">
-                      “Después de nuestra ruptura, mi exnovia comenzó a usar mis datos para pedir préstamos. Me enteré
-                      cuando empecé a recibir llamadas de cobradores. Fue devastador ver cómo alguien que amaba me
-                      traicionó de esa manera.”
-                    </p>
-                  </blockquote>
-                  <figcaption class="font-medium">
-                    <div class="text-sky-500 dark:text-sky-400">David M.</div>
-                  </figcaption>
-                </div>
-              </figure>
-
-              <figure class="p-8 md:flex bg-slate-100 rounded-xl md:p-0 ">
-                <img class="w-24 h-24 mx-auto rounded-full md:w-48 md:h-auto md:rounded-none" src="../assets/img/m0.jpg"
-                  alt="Perfil de persona estafada" width="384" height="512">
-                <div class="pt-6 space-y-4 text-center md:p-8 md:text-left">
-                  <blockquote>
-                    <p class="text-lg font-medium">
-                      “Mi pareja me hizo creer que necesitaba un préstamo para ayudar a su familia. Confié en ella y
-                      terminé dándole mis ahorros. Resulta que todo era una mentira; nunca hubo una emergencia, solo
-                      estaba aprovechándose de mí.”
-                    </p>
-                  </blockquote>
-                  <figcaption class="font-medium">
-                    <div class="text-sky-500 dark:text-sky-400">Sofía R.</div>
-                  </figcaption>
-                </div>
-              </figure>
-
-              <figure class="p-8 md:flex bg-slate-100 rounded-xl md:p-0 ">
-                <img class="w-24 h-24 mx-auto rounded-full md:w-48 md:h-auto md:rounded-none" src="../assets/img/h2.jpg"
-                  alt="Perfil de persona estafada" width="384" height="512">
-                <div class="pt-6 space-y-4 text-center md:p-8 md:text-left">
-                  <blockquote>
-                    <p class="text-lg font-medium">
-                      “Mi ex me convenció de comprar un coche a su nombre, prometiendo que lo pagaríamos juntos. Cuando
-                      rompimos, se quedó con el coche y los pagos cayeron sobre mí. Pasé meses tratando de resolver la
-                      situación.”
-                    </p>
-                  </blockquote>
-                  <figcaption class="font-medium">
-                    <div class="text-sky-500 dark:text-sky-400">Fernando T.</div>
-                  </figcaption>
-                </div>
-              </figure>
-
-              <figure class="p-8 md:flex bg-slate-100 rounded-xl md:p-0 ">
-                <img class="w-24 h-24 mx-auto rounded-full md:w-48 md:h-auto md:rounded-none" src="../assets/img/m4.jpg"
-                  alt="Perfil de persona estafada" width="384" height="512">
-                <div class="pt-6 space-y-4 text-center md:p-8 md:text-left">
-                  <blockquote>
-                    <p class="text-lg font-medium">
-                      “Me enamoré de un chico que parecía perfecto. Me pidió que le prestara dinero para invertir en un
-                      negocio, prometiendo altos retornos. Después de un tiempo, desapareció sin dejar rastro,
-                      llevándose mis ahorros.”
-                    </p>
-                  </blockquote>
-                  <figcaption class="font-medium">
-                    <div class="text-sky-500 dark:text-sky-400">Carla B.</div>
-                  </figcaption>
-                </div>
-              </figure>
-              <figure class="p-8 md:flex bg-slate-100 rounded-xl md:p-0 ">
-                <img class="w-24 h-24 mx-auto rounded-full md:w-48 md:h-auto md:rounded-none"
-                  src="../assets/img/hombre00.jpg" alt="Perfil de persona estafada" width="384" height="512">
-                <div class="pt-6 space-y-4 text-center md:p-8 md:text-left">
-                  <blockquote>
-                    <p class="text-lg font-medium">
-                      “Mi exnovia se hizo pasar por enferma para que le ayudara con gastos médicos. Creí en su historia
-                      y le presté dinero, solo para descubrir que era un engaño. Me sentí traicionada y tonta por no
-                      darme cuenta antes.”
-                    </p>
-                  </blockquote>
-                  <figcaption class="font-medium">
-                    <div class="text-sky-500 dark:text-sky-400">Daniel J.</div>
-                  </figcaption>
-                </div>
-              </figure>
-
-              <figure class="p-8 md:flex bg-slate-100 rounded-xl md:p-0 ">
-                <img class="w-24 h-24 mx-auto rounded-full md:w-48 md:h-auto md:rounded-none" src="../assets/img/h4.jpg"
-                  alt="Perfil de persona estafada" width="384" height="512">
-                <div class="pt-6 space-y-4 text-center md:p-8 md:text-left">
-                  <blockquote>
-                    <p class="text-lg font-medium">
-                      “Estaba muy enamorado y decidí ayudar a mi ex a pagar sus deudas. Resulta que había estado
-                      mintiendo sobre su situación financiera y solo usó mi dinero para salir con otras personas. Fue
-                      devastador darme cuenta de la verdad.”
-                    </p>
-                  </blockquote>
-                  <figcaption class="font-medium">
-                    <div class="text-sky-500 dark:text-sky-400">Luis F.</div>
-                  </figcaption>
-                </div>
-              </figure>
-
-              <figure class="p-8 md:flex bg-slate-100 rounded-xl md:p-0 ">
-                <img class="w-24 h-24 mx-auto rounded-full md:w-48 md:h-auto md:rounded-none" src="../assets/img/m2.jpg"
-                  alt="Perfil de persona estafada" width="384" height="512">
-                <div class="pt-6 space-y-4 text-center md:p-8 md:text-left">
-                  <blockquote>
-                    <p class="text-lg font-medium">
-                      “Creí que estaba en una relación seria, pero mi ex se aprovechó de mi confianza. Me pidió que le
-                      prestara dinero para un viaje de trabajo, y después de eso desapareció sin pagarme ni una sola
-                      moneda. Me dejó con una gran deuda.”
-                    </p>
-                  </blockquote>
-                  <figcaption class="font-medium">
-                    <div class="text-sky-500 dark:text-sky-400">Claudia S.</div>
-                  </figcaption>
-                </div>
-              </figure>
-              <div class="flex justify-center mt-8">
-                <RouterLink :to="{ name: 'comments' }" class="px-4 py-2 text-sm font-semibold text-white transition duration-300 ease-in-out rounded-lg shadow-md bg-sky-600 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-opacity-50 sm:text-base">
-                  Deja tu comentario
-                </RouterLink>
-              </div>
-            </div>
+            <h3 class="mb-4 text-2xl font-bold text-center text-gray-900">
+              Conoce las señales y protege tu bienestar ante relaciones que causan más daño que amor.
+            </h3>
 
             <div data-aos="fade-right" class="grid gap-8 mb-8 md:grid-cols-2">
               <div class="overflow-hidden bg-white rounded-lg shadow-lg">
-                <img src="https://images.unsplash.com/photo-1621252179027-94459d278660?w=800"
-                  alt="Advertencia Financiera" class="object-cover w-full h-48">
+                <img src="../assets/img/alerta.jpg"
+                  alt="Advertencia Financiera" class="object-cover w-full ">
                 <div class="p-6">
                   <h2 class="mb-4 text-2xl font-bold text-gray-900">Señales Comunes de Advertencia</h2>
                   <ul class="space-y-3 text-gray-700">
@@ -255,7 +149,7 @@
                     </li>
                     <li class="flex items-center">
                       <span class="mr-2 text-red-500">⚠️</span>
-                      Emergencias financieras misteriosas que no se explican.
+                      Emergencias financieras que no se explican.
                     </li>
                     <li class="flex items-center">
                       <span class="mr-2 text-red-500">⚠️</span>
@@ -302,6 +196,43 @@
                       <span class="mr-2 text-green-500">✓</span>
                       Confiar en tus instintos y buscar ayuda si es necesario.
                     </li>
+                    <li class="flex items-center">
+  <span class="mr-2 text-green-500">✓</span>
+  Crear un presupuesto y discutir metas financieras en pareja.
+</li>
+<li class="flex items-center">
+  <span class="mr-2 text-green-500">✓</span>
+  Limitar el acceso a tus cuentas bancarias y financieras.
+</li>
+<li class="flex items-center">
+  <span class="mr-2 text-green-500">✓</span>
+  Revisar el historial de deudas de la pareja antes de comprometerte.
+</li>
+<li class="flex items-center">
+  <span class="mr-2 text-green-500">✓</span>
+  No compartir información de acceso a tus cuentas en línea.
+</li>
+<li class="flex items-center">
+  <span class="mr-2 text-green-500">✓</span>
+  Asegurarte de que los préstamos a nombre de ambos estén en control.
+</li>
+<li class="flex items-center">
+  <span class="mr-2 text-green-500">✓</span>
+  Definir acuerdos claros sobre gastos compartidos y ahorros.
+</li>
+<li class="flex items-center">
+  <span class="mr-2 text-green-500">✓</span>
+  Priorizar tu seguridad financiera en caso de problemas en la relación.
+</li>
+<li class="flex items-center">
+  <span class="mr-2 text-green-500">✓</span>
+  Consultar a un asesor financiero para una segunda opinión.
+</li>
+<li class="flex items-center">
+  <span class="mr-2 text-green-500">✓</span>
+  Mantener una copia de seguridad de todos los documentos financieros.
+</li>
+
                   </ul>
                 </div>
               </div>
@@ -309,6 +240,7 @@
 
             <div class="p-6 bg-white rounded-lg shadow-lg">
               <h2 class="mb-4 text-2xl font-bold text-gray-900">Consejos de Protección Legal</h2>
+              <h4>Toma estos consejos en base a las historias de nuestros usuarios</h4>
               <div class="grid gap-6 md:grid-cols-3">
                 <div data-aos="fade-right" class="p-4 rounded-lg bg-blue-50">
                   <h3 class="mb-2 font-bold text-blue-800">Documentación</h3>
@@ -343,9 +275,21 @@
               <h2 class="mb-4 text-3xl font-bold text-gray-900">Aprende de las experiencias de otros</h2>
               <p class="mb-6 text-gray-600">Nuestro objetivo es ayudarte a entender cómo es que la mente de algunas
                 personas es capaz de manipular a sus parejas, para llevarlos a problemas de un nivel muy alto. </p>
+              <h3 class="mb-4 text-xl font-semibold text-sky-950">
+                Te invitamos a compartir tus experiencias y a dejar un comentario para ayudar a otros a reconocer las
+                señales de alerta en sus relaciones.
 
+              </h3>
+              <div class="flex justify-center">
+                <img class="w-[600px] rounded-md " src="../assets/img/comentandoLanscape.jpg" alt="">
+              </div>
             </div>
-           
+
+            <div class="">
+              <router-link :to="{ name: 'comments' }" class="px-4 py-2 mt-3 text-white rounded-md bg-sky-800">
+                Ir a comentarios
+              </router-link>
+            </div>
             <h3 class="mt-6 text-2xl font-bold text-center text-sky-900 font-poppins">Te puede interesar...</h3>
             <section class="flex justify-center w-full my-6 space-x-4"> <!-- ads section -->
               <div
@@ -404,8 +348,24 @@
 import { RouterLink } from 'vue-router';
 import MainLayout from '../layouts/MainLayout.vue';
 import { onMounted, onUnmounted, ref } from 'vue';
+import ComentsSlider from '../components/comentsSlider/ComentsSlider.vue';
+import CommentExampleCard from '../components/commentExample/commentExampleCard.vue';
 let showImgMen = ref(false);
 let showImgWomen = ref(true);
+
+
+// images
+import h1Image from '../assets/img/h1.jpg';
+import h2Image from '../assets/img/h2.jpg';
+import h3Image from '../assets/img/h3.jpg';
+import h4Image from '../assets/img/h4.jpg';
+import m0Image from '../assets/img/m0.jpg';
+import m1Image from '../assets/img/m1.jpg';
+import m2Image from '../assets/img/m2.jpg';
+import m3Image from '../assets/img/m3.jpg';
+import m4Image from '../assets/img/m4.jpg';
+
+
 
 const toggleImages = () => {
   showImgMen.value = !showImgMen.value;
@@ -424,4 +384,68 @@ onUnmounted(() => {
 });
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+@mixin white-gradient {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7))
+  }
+}
+
+
+// Styling
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  // min-height: 10px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100dvw;
+
+  &::before,
+  &::after {
+    @include white-gradient;
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slide-track {
+
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+
+    width: calc(250px * 14);
+  }
+
+  .slide {
+    height: 100px;
+    width: 250px;
+
+  }
+}
+</style>

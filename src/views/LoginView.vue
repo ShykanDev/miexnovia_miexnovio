@@ -42,7 +42,6 @@
         <!-- Enlace para registrarse o recuperar la contraseña -->
         <div class="text-sm text-center text-gray-500">
             ¿No tienes una cuenta? <RouterLink :to="{name: 'register'}" class="font-semibold text-sky-800 hover:underline">Regístrate</RouterLink> <br>
-          
         </div>
     </div>
 </div>
