@@ -115,7 +115,7 @@ onMounted(() => {
   :age="comment.edad"
   :commentId="comment.id"
   :submitReply="agregarRespuesta"
-  :responses="comments[index]" 
+  :responses="comments[index].respuestas" 
 >
   <!-- Respuestas -->
   <div v-for="(respuesta, idx) in comment.respuestas" :key="idx" class="mt-4 ml-6">

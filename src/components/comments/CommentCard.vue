@@ -30,8 +30,24 @@
             </div>
 
             <!-- Reply List -->
-             <p>{{ responses.respuestas }}</p>
 
+            <!-- <section class="flex flex-col gap-2 my-6">
+                <div class="gap-2 bg-red-500" v-for="(response, index) in responses" :key="index">
+                    <p>{{ response.nombre}} respondió:</p>
+                    <p>"{{ response.contenido }}"</p>
+                </div>
+            </section> -->
+
+            <section class="flex flex-col gap-4 my-6">
+    <div 
+        class="gap-2 p-4 text-gray-800 border rounded-lg shadow-md bg-sky-100" 
+        v-for="(response, index) in responses" 
+        :key="index"
+    >
+        <p class="font-medium text-cyan-700">Respuesta:</p>
+        <p class="text-sm italic text-gray-600">"{{ response.contenido }}"</p>
+    </div>
+</section>
 
             <!-- Reply Input (Textarea) -->
             <div v-if="showReply" class="mt-4">
@@ -68,7 +84,7 @@ const props = defineProps({
   title: String,
   content: String,
   date: String,
-  commentId: String,  // ID del comentario
+  commentId: String, 
   submitReply: Function,  // Recibe la función para agregar respuestas
   responses: Array
 });
