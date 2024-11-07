@@ -113,11 +113,11 @@
           <div class="flex flex-col md:flex-row">
             <div class="p-2 md:w-1/2">
               <img alt="A woman sitting on a bed looking upset while a man lies next to her"
-                class="w-full border-4 border-blue-200" src="https://placehold.co/600x400" />
+                class="w-full border-4 border-blue-200" src="../assets/img/titleWall.jpg" />
             </div>
             <div class="p-2 md:w-1/2">
               <h1 class="text-4xl font-bold leading-tight text-blue-600">
-                Los 19 problemas de pareja más comunes con ejemplos y soluciones
+               Estafas, mentiras, engaños, comparte tus experiencias con otros, y evita que caigan en las mismas trampas.
               </h1>
 
               <div class="mt-4">
@@ -137,9 +137,9 @@
 
                   </a>
 
-                  <a href="#" class="flex items-center px-4 py-2 text-blue-600 border border-blue-200 rounded">
+                  <a href="https://api.whatsapp.com/send/?phone=525562516687&text&type=phone_number&app_absent=0" class="flex items-center px-4 py-2 text-blue-600 border border-blue-200 rounded" target="_blank" rel="noopener noreferrer">
                     <v-icon name="co-whatsapp" class="mr-2 text-[#25d366]"></v-icon>
-
+                    
                   </a>
                   <a href="https://www.instagram.com/_prasadam_/?hl=es-la" target="_blank" rel="noopener noreferrer"
                     class="flex items-center px-4 py-2 text-blue-600 border border-blue-200 rounded">
@@ -382,10 +382,10 @@
                 <img alt="Imagen de una estrella dorada que simboliza unicidad" class="mx-auto mb-4 w-44"
                   src="../assets/img/coupleSite.png" />
                 <h3 class="mb-2 text-xl font-bold">
-                  Sitio Creado para conocer
+                  Interactua con otros
                 </h3>
                 <p>
-                  Esperamos que puedas compartir tus experiencias con otros, y veas que
+                  Esperamos que puedas compartir tus experiencias con otros, y aprendas al igual de otras personas.
                 </p>
               </div>
             </section>

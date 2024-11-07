@@ -47,7 +47,7 @@ const router = createRouter({
     {
       path: '/login',
       name: 'login',
-      component: () => import('../views/LoginView.vue'),
+      component: () => import('../views/LoginViewV2.vue'),
       meta:{
         loginRequired: false,
       }

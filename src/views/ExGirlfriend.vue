@@ -17,7 +17,7 @@ import MainLayout from '../layouts/MainLayout.vue';
      
         <div class="mt-5 overflow-hidden bg-white rounded-lg shadow-lg">
   <div class="p-6 bg-blue-600">
-    <h1 class="text-3xl font-bold text-white">Señales de Alerta: Cambio de Religión</h1>
+    <h1 class="text-3xl font-bold text-white"> Cambio de Religión</h1>
   </div>
 
   <div class="p-6">
@@ -50,7 +50,7 @@ import MainLayout from '../layouts/MainLayout.vue';
     </div>
     <div class="mt-5 overflow-hidden bg-white rounded-lg shadow-lg">
   <div class="p-6 bg-purple-600">
-    <h1 class="text-3xl font-bold text-white">Señales de Alerta: Influencia en Herencias</h1>
+    <h1 class="text-3xl font-bold text-white"> Influencia en Herencias</h1>
   </div>
 
   <div class="p-6">
@@ -147,7 +147,7 @@ import MainLayout from '../layouts/MainLayout.vue';
 </div>
 <div class="mt-5 overflow-hidden bg-white rounded-lg shadow-lg">
   <div class="p-6 bg-red-600">
-    <h1 class="text-3xl font-bold text-white">Señales de Alerta: Uso Indebido de Tarjetas</h1>
+    <h1 class="text-3xl font-bold text-white">Uso Indebido de Tarjetas</h1>
   </div>
 
   <div class="p-6">
@@ -584,6 +584,17 @@ import MainLayout from '../layouts/MainLayout.vue';
             </div>
           </div>
         </div>
+        <section class="p-6 my-4 mt-10 bg-white rounded-lg shadow-lg">
+  <div class="text-center">
+    <h2 class="mb-4 text-2xl font-bold text-gray-900">¡Te Invitamos a Compartir tus Comentarios!</h2>
+    <p class="mb-6 text-gray-700">Tu opinión es importante para nosotros. Si has tenido alguna experiencia relacionada o quieres compartir tu perspectiva, no dudes en dejarnos tus comentarios.</p>
+    <div class="flex justify-center">
+      <router-link :to="{ name: 'comments' }" class="px-6 py-2 font-medium text-white transition duration-300 rounded-lg bg-emerald-500 hover:bg-emerald-700">Ir a Comentarios
+        <v-icon name="hi-solid-user-group" scale="1.5" class="text-white" />
+      </router-link>
+    </div>
+  </div>
+</section>
       </div>
     </template>
   </MainLayout>

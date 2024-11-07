@@ -10,14 +10,14 @@
                     <RouterLink :to="{name: 'login'}" class="px-4 py-2 mt-3 font-medium text-white rounded-md bg-sky-700 hover:bg-sky-800">Ir al Login</RouterLink>
                 </div>
             </article>
-              <div class="flex flex-col items-center justify-start min-h-screen p-6 space-y-6 rounded-lg shadow-md md:pt-20 bg-slate-white w-dvw">
+              <div class="flex flex-col items-center justify-start min-h-screen p-6 space-y-6 rounded-lg shadow-md bg-slate-50 md:pt-20 w-dvw lg:pt-9" >
                   <!-- Título -->
-                  <h2 class="text-2xl font-bold text-center text-sky-800">
+                  <h2 class="text-4xl font-bold text-center text-sky-800">
                       Registrarse
                   </h2>
 
                   <!-- Formulario de registro -->
-                  <form @submit.prevent="handleSubmit" class="w-full space-y-4">
+                  <form @submit.prevent="handleSubmit" class="w-full p-3 space-y-4 bg-white rounded-2xl md:py-6">
                       <!-- Campo de Nombre -->
                       <div>
                           <label for="name" class="block text-sm font-medium text-gray-700">
@@ -166,8 +166,7 @@ const handleSubmit = async () => {
             // storeUser.setUser(name.value);
             userInfoStore.setUserName(name.value);
               console.log('Usuario registrado:', user);
-              alert('Registro exitoso');
-              // Aquí puedes enviar los datos a tu API o backend
+              accountCreated.value = true;
           }
       } catch (error) {
           console.error('Error al registrar el usuario:', error);

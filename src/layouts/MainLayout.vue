@@ -3,6 +3,9 @@
         <header>
             <div class="w-full overflow-hidden font-poppins">
                 <nav class="fixed z-50 w-full text-black bg-white shadow-md ">
+                    <a class="absolute z-50 w-6 lg:top-4 lg:right-[5%] right-[10%] lg:w-auto md:bottom-2 md:right-2 " >
+                        <img class="w-8 " src="../assets/img/sslTop.png" alt="">
+                    </a>
                     <a class="absolute z-50 w-6 lg:top-2 lg:right-0 right-2 lg:w-auto" href="https://www.prasadam.mx">
                         <img class="w-8 " src="../assets/img/logoPrasadam.png" alt="">
                     </a>
@@ -23,7 +26,7 @@
                                         <router-link :class="{ 'bg-orange-600 text-white': route.name === 'comments', 'text-gray-700 hover:text-white hover:bg-orange-500': route.name !== 'comments' }" :to="{name: 'comments'}"
                                         class="px-2 py-1 rounded-md autofill: ">Comentarios</router-link>
                                         <router-link :class="{ 'bg-orange-600 text-white': route.name === 'about', 'text-gray-700 hover:text-white hover:bg-orange-500': route.name !== 'exnovia' }" :to="{name: 'about'}"
-                                        class="px-2 py-1 rounded-md autofill: ">Nosotros</router-link>
+                                        class="hidden px-2 py-1 rounded-md md:block">Nosotros</router-link>
                                         <!-- <router-link :class="{ 'bg-rose-600 text-white': route.name === 'comments', 'text-gray-700 hover:text-white hover:bg-rose-500': route.name !== 'comments' }" :to="{name: 'comments'}"
                                         class="px-2 py-1 rounded-md autofill: ">Comentarios</router-link> -->
                                     </div>
@@ -45,6 +48,7 @@
                 
             </slot>
             <div class="relative z-30 py-6 text-white rounded-lg shadow-md bg-slate-800 px-7">
+                
                 <img src="../assets/img/sslCert01.png" class="absolute w-20 top-2 right-1" alt="">
   <h3 class="mb-4 text-3xl font-bold text-left text-orange-400">Contacto</h3>
 
@@ -71,7 +75,7 @@
       <a href="mailto:informes@prasadam.mx" class="text-sm transition-colors font-poppins hover:text-orange-400">informes@prasadam.mx</a>
     </div>
 
-    <div class="flex items-center justify-center gap-2">
+    <div class="flex items-center justify-center gap-2 mb-2">
       <v-icon name="la-whatsapp" scale="1.5" class="transition-colors text-emerald-400 hover:text-emerald-300" />
       <a href="https://wa.me/525562516687"
          class="text-sm font-medium transition-colors font-poppins text-emerald-400 hover:text-emerald-300"
@@ -80,12 +84,15 @@
       </a>
     </div>
   </div>
-
   <!-- Uncomment this section to include the map -->
-  <!-- 
+  
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.5395970522604!2d-99.1760704!3d19.4322888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8b32758939b%3A0xf34fbd07bc47d6dd!2sGutenberg%20128%2C%20Anzures%2C%20Miguel%20Hidalgo%2C%2011590%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1730328617197!5m2!1sen!2smx"
-    style="border:0;" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-64"></iframe>
-  -->
+  style="border:0;" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-64"></iframe>
+    <div class="container mx-auto mt-2 text-sm text-center ">
+        <p>&copy; 2024 Todos los derechos reservados</p>
+        <p>Design: PACA</p>
+    </div>
+ 
 </div>
 
         </main>
