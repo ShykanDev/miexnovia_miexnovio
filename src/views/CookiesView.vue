@@ -2,7 +2,7 @@
     <div class="">
 <MainLayout>
         <template #main>
-            <section id="cookies-policy" class="p-8 bg-white font-poppins">
+            <section id="cookies-policy" class="p-8 pt-20 bg-white md:pt-10 font-poppins">
     <h2 class="mb-4 text-2xl font-semibold text-center">Uso de Cookies</h2>
 
     <p class="mb-4">
