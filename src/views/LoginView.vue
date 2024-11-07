@@ -1,9 +1,13 @@
 <template>
     <MainLayout>
         <template #main>
-            <div class="flex justify-center w-full">
-        <div class="flex items-center justify-center w-full min-h-screen bg-gray-50">
-    <div class="w-full max-w-md p-6 space-y-6 bg-white rounded-lg shadow-md">
+            <!-- <div class="fixed top-0 bottom-0 left-0 w-full "> -->
+            <!-- </div> -->
+            <div class="z-30 flex justify-center w-full">
+                <div class="z-20 flex items-start justify-center w-full min-h-screen md:pt-20 bg-gray-50">
+            <!-- <img src="../assets/img/wallpaperLoginLandscape.jpg" class="fixed top-0 bottom-0 left-0 right-0 hidden w-full md:block -z-10" alt=""> -->
+
+    <div class="w-full max-w-md md:max-w-[80%] p-6 space-y-6 md:min-h-[500px] bg-white rounded-lg shadow-md">
         <!-- Título -->
         <h2 class="text-2xl font-bold text-center text-sky-800">
             Iniciar sesión

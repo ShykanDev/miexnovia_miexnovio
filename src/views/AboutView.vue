@@ -2,7 +2,7 @@
   <div class="">
       <MainLayout>
           <template #main>
-              <section class="py-12 bg-gray-50">
+              <section class="py-12 mt-6 bg-gray-50">
                   <div class="px-4 mx-auto max-w-7xl">
                       <h2 class="mb-8 text-4xl font-bold text-center text-orange-600">Sobre Nosotros</h2>
                       <p class="p-2 mb-6 text-lg text-center text-gray-700 bg-white rounded-md">

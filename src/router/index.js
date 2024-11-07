@@ -59,7 +59,14 @@ const router = createRouter({
       meta:{
         loginRequired: false,
       }
-    }
+    },
+    {
+      path: '/cookies',
+      name: 'cookies',
+      component: () => import('../views/CookiesView.vue'),
+      meta:{
+        loginRequired: false,
+      }}
   ],
   scrollBehavior() {
     return { top: 0 };

@@ -1,23 +1,23 @@
 <template>
-  <div class="flex items-center justify-center w-full min-h-screen bg-gray-50">
+  <div class="flex items-center justify-center w-full bg-gray-50">
       <MainLayout>
           <template #main>
             <article v-show="accountCreated" class="fixed top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-85">
                 <div class="flex flex-col items-center justify-center w-3/4 gap-2 p-1 text-center text-black bg-white rounded-lg font-poppins ">
-                    <p>¡
+                    <p>
                         Tu cuenta ha sido registrada!</p>
                     <p>Ahora puedes ir al login, para iniciar sesión</p>
                     <RouterLink :to="{name: 'login'}" class="px-4 py-2 mt-3 font-medium text-white rounded-md bg-sky-700 hover:bg-sky-800">Ir al Login</RouterLink>
                 </div>
             </article>
-              <div class="p-6 space-y-6 bg-white rounded-lg shadow-md w-dvw">
+              <div class="flex flex-col items-center justify-start min-h-screen p-6 space-y-6 rounded-lg shadow-md md:pt-20 bg-slate-white w-dvw">
                   <!-- Título -->
                   <h2 class="text-2xl font-bold text-center text-sky-800">
                       Registrarse
                   </h2>
 
                   <!-- Formulario de registro -->
-                  <form @submit.prevent="handleSubmit" class="space-y-4">
+                  <form @submit.prevent="handleSubmit" class="w-full space-y-4">
                       <!-- Campo de Nombre -->
                       <div>
                           <label for="name" class="block text-sm font-medium text-gray-700">

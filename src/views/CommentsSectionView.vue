@@ -3,6 +3,7 @@ import { ref, onMounted } from 'vue';
 import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, doc, updateDoc } from "firebase/firestore";
 import CommentCard from '../components/comments/CommentCard.vue';
 import MainLayout from '../layouts/MainLayout.vue';
+import { useUserInfo } from '../stores/UserInfo';
 
 // Campos reactivos para el formulario
 const name = ref('');
@@ -10,6 +11,8 @@ const age = ref(0);
 const titulo = ref('');
 const contenido = ref('');
 
+// comentator name
+let commentatorName = useUserInfo().getUserName;
 // Array reactivo para los comentarios
 const comments = ref([]);
 let responsesExtracted 
@@ -40,7 +43,7 @@ const agregarComentario = async () => {
         titulo: titulo.value,
         contenido: contenido.value,
         fecha: new Date(),
-        nombre: name.value,
+        nombre: commentatorName,
         edad: age.value,
         respuestas: [] // Campo para las respuestas
       });
@@ -105,17 +108,19 @@ onMounted(() => {
 
       <div class="flex justify-center w-full mt-10 font-poppins">
         <!-- Sección de comentarios -->
-        <section class="flex flex-wrap w-full justify-evenly">
+        <section class="flex flex-wrap w-full gap-1">
             <CommentCard
   v-for="(comment, index) in comments"
   :key="index"
   :content="comment.contenido"
   :name="comment.nombre"
+  :comentatorName="commentatorName"
   :title="comment.titulo"
   :age="comment.edad"
   :commentId="comment.id"
   :submitReply="agregarRespuesta"
   :responses="comments[index].respuestas" 
+  :date="comment.fecha"
 >
   <!-- Respuestas -->
   <div v-for="(respuesta, idx) in comment.respuestas" :key="idx" class="mt-4 ml-6">
@@ -132,7 +137,7 @@ onMounted(() => {
     rows="3"
   ></textarea>
   <button 
-    @click="agregarRespuesta(comment.id, replyContent, name)" 
+    @click="agregarRespuesta(comment.id, replyContent, commentatorName)" 
     class="px-4 py-2 mt-2 text-white rounded-lg bg-sky-600"
   >
     Responder
@@ -149,15 +154,15 @@ onMounted(() => {
           <form @submit.prevent="agregarComentario" class="space-y-6">
             <!-- Campo de Título del Comentario -->
             <div>
-              <label for="userName" class="block text-sm font-medium text-gray-700">Nombre del autor</label>
+              <!-- <label for="userName" class="block text-sm font-medium text-gray-700">Nombre del autor</label>
               <input
                 type="text"
                 id="userName"
                 placeholder="Alberto Jimenez"
-                v-model="name"
+                v-model="commentatorName"
                 class="block w-full px-4 py-3 mt-1 mb-2 transition duration-200 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-sky-500"
                 required
-              />
+              /> -->
               <label for="commentTitle" class="block text-sm font-medium text-gray-700">Título del Comentario</label>
               <input
                 type="text"

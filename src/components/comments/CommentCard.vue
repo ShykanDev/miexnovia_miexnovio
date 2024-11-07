@@ -3,14 +3,14 @@
         <div class="p-4 mx-auto mb-4 bg-white border border-gray-200 rounded-lg shadow-md ">
 
             <div class="flex items-center gap-1">
-                <v-icon name="fa-user-alt" class="text-sky-800" />
-                <p class="mb-1 text-base font-semibold text-gray-800">{{ name }}</p>
+                <v-icon name="fa-user-alt" class="text-cyan-800" />
+                <p class="mb-1 text-base font-semibold text-orange-700">{{ name }}</p>
             </div>
             <!-- Name and Age -->
-            <p class="mb-1 text-xs font-semibold text-gray-800">{{ age }}</p>
+            <p class="mb-1 text-xs font-semibold text-sky-800">{{ age }} años</p>
 
             <!-- Comment Title -->
-            <p class="mb-2 text-gray-800 -semibold text">
+            <p class="mb-2 text-rose-800 -semibold text">
                 "{{ title }}"
             </p>
 
@@ -44,8 +44,10 @@
         v-for="(response, index) in responses" 
         :key="index"
     >
-        <p class="font-medium text-cyan-700">Respuesta:</p>
+        <p class="text-sm font-medium text-cyan-700">Respuesta a {{ response.nombre }}:</p>
         <p class="text-sm italic text-gray-600">"{{ response.contenido }}"</p>
+                <!-- fecha -->
+                 <p class="text-xs italic text-gray-600 text-end">{{ formatDate(response.fecha) }}</p>
     </div>
 </section>
 
@@ -67,8 +69,7 @@
             <!-- Date -->
             <div class="flex items-center justify-end gap-1">
                 <v-icon name="io-calendar" class="text-sky-800" />
-                <!-- fecha de timestamp a date -->
-                <!-- <p class="mb-1 text-xs text-gray-500 text-end">Publicado el {{ date.slice(0,10) }}</p> -->
+                <p>{{ formatDate(date) }}</p>
             </div>
 
         </div>
@@ -88,6 +89,12 @@ const props = defineProps({
   submitReply: Function,  // Recibe la función para agregar respuestas
   responses: Array
 });
+
+
+const formatDate = (fecha: Timestamp) => {
+    const date = fecha.toDate();
+    return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+}
 
 
 // Estado para manejar la visibilidad del textarea

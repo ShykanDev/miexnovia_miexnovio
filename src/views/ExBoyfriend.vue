@@ -2,219 +2,99 @@
   <MainLayout>
     <template #main>
 
-      <div class="px-4 py-8 mx-auto max-w-7xl">
-        <h2 class="mb-5 text-2xl font-medium text-center bg-white shadow-lg text-sky-800 rounded-xl">Engaños, manipulaciones y deslealtades: La verdad
-          de algunos exnovios</h2>
-        <h3 class="p-3 font-medium bg-white shadow-lg rounded-xl">Aunque muchos de nosotros hemos tenido exnovios que quedaron en el pasado, hay ocasiones
-          en que estas relaciones dejan cicatrices más profundas. Hoy exploramos los casos en los que una ruptura no
-          solo significa un final, sino un inicio de problemas como engaños, manipulaciones y traiciones. Porque el
-          amor, en su faceta más oscura, puede ser un viaje lleno de lecciones dolorosas.</h3>
-
-        <div data-aos="fade-left" class="p-3 mt-5 bg-white shadow-lg rounded-xl">
-          <h3 class="mb-3 text-2xl font-medium text-sky-800">Manipulaciones inesperadas</h3>
-          <p>Algunas relaciones esconden intenciones que solo se revelan al final. Un exnovio puede pasar de ser un
-            compañero cariñoso a convertirse en un experto manipulador. Desde promesas vacías hasta juegos mentales,
-            descubre cómo el amor puede transformarse en una estrategia para aprovecharse del otro.</p>
-        </div>
-
-        <div data-aos="fade-left" class="p-3 mt-5 bg-white shadow-lg rounded-xl">
-          <h3 class="mb-3 text-2xl font-medium text-sky-800">Deslealtad: el corazón roto y más</h3>
-          <p>Las traiciones no siempre son evidentes. Algunos exnovios pueden no solo romper el corazón, sino también
-            traicionar la confianza de maneras inesperadas. Historias de deslealtad que no solo implican engaños
-            emocionales, sino también el robo de confianza y recursos.</p>
-        </div>
-
-        <div data-aos="fade-left" class="p-3 mt-5 bg-white shadow-lg rounded-xl">
-          <h3 class="mb-3 text-2xl font-medium text-sky-800">El juego de la manipulación emocional</h3>
-          <p>Cuando el amor se convierte en una transacción, algunos exnovios pueden manipular los sentimientos para
-            conseguir lo que desean. Desde utilizar la culpa hasta aprovecharse de vulnerabilidades, estos relatos
-            revelan cómo algunos juegan con las emociones de otros para su propio beneficio.</p>
-        </div>
-
-        <div data-aos="fade-left" class="p-3 mt-5 bg-white shadow-lg rounded-xl">
-          <h3 class="mb-3 text-2xl font-medium text-sky-800">Promesas vacías y verdades ocultas</h3>
-          <p>Las promesas pueden ser un arma de doble filo. En esta sección, exploramos historias donde los compromisos
-            se convierten en herramientas de manipulación, decepcionando a aquellos que creyeron en el amor sincero.</p>
-        </div>
-
-        <div data-aos="fade-left" class="p-3 mt-5 bg-white shadow-lg rounded-xl">
-          <h3 class="mb-3 text-2xl font-medium text-sky-800">La máscara del encanto: de dulce a tóxico</h3>
-          <p>¿Alguna vez te has encontrado con alguien que parecía perfecto al principio? Aquí abordamos relatos en los
-            que la apariencia encantadora oculta una personalidad manipuladora y tóxica, mostrando cómo algunos exnovios
-            manejan el arte del engaño con maestría.</p>
-        </div>
+      <h2 class="mb-5 text-4xl font-bold text-center md:mt-12 text-slate-800 rounded-xl">Engaños, manipulaciones y deslealtades: La verdad
+        de algunos exnovios</h2>
+      <div class="px-4 py-8 mx-auto max-w-7xl mt-11">
         <div class="overflow-hidden bg-white rounded-lg shadow-lg">
           <div class="p-6 bg-sky-800">
             <h1 data-aos="fade-left" class="text-3xl font-bold text-white">Señales de Advertencia de Ex-Novios</h1>
           </div>
 
           <div class="p-6">
-            <div class="grid gap-8 md:grid-cols-2">
-              <div>
-                <h2 class="mb-4 text-2xl font-bold text-gray-900">Tácticas Comunes de Manipulación</h2>
-                <div class="space-y-4">
-                  <div data-aos="fade-right" class="p-4 rounded-lg bg-red-50">
-                    <h3 class="font-bold text-red-800">Manipulación Financiera</h3>
-                    <p class="text-gray-700">Pedir constantemente "préstamos" sin intención de devolverlos, usando
-                      manipulación emocional para acceder a tarjetas de crédito o ahorros</p>
-                  </div>
-                  <div data-aos="fade-right" class="p-4 rounded-lg bg-red-50">
-                    <h3 class="font-bold text-red-800">Chantaje Emocional</h3>
-                    <p class="text-gray-700">Usar la culpa, amenazas de autolesión o emergencias familiares para obtener
-                      dinero o bienes valiosos</p>
-                  </div>
-                  <div data-aos="fade-right" class="p-4 rounded-lg bg-red-50">
-                    <h3 class="font-bold text-red-800">Negocios Falsos</h3>
-                    <p class="text-gray-700">Convencerte de invertir en negocios inexistentes o esquemas piramidales,
-                      prometiendo rendimientos irreales</p>
-                  </div>
-                  <div data-aos="fade-right" class="p-4 rounded-lg bg-red-50">
-                    <h3 class="font-bold text-red-800">Robo de Identidad</h3>
-                    <p class="text-gray-700">Recopilar información personal para fines fraudulentos, abrir cuentas a tu
-                      nombre</p>
-                  </div>
-                </div>
+  <div class="grid gap-8 md:grid-cols-2">
+    <div>
+      <h2 class="mb-4 text-2xl font-bold text-gray-900">Tácticas Comunes de Manipulación de Hombres</h2>
+      <div class="space-y-4">
+        <div data-aos="fade-right" class="p-4 rounded-lg bg-red-50">
+          <h3 class="font-bold text-red-800">Manipulación Financiera</h3>
+          <p class="text-gray-700">Pedir constantemente "préstamos" sin intención de devolverlos, usando manipulación emocional para acceder a tarjetas de crédito o ahorros.</p>
+        </div>
+        <div data-aos="fade-right" class="p-4 rounded-lg bg-red-50">
+          <h3 class="font-bold text-red-800">Chantaje Emocional</h3>
+          <p class="text-gray-700">Usar la culpa, amenazas de autolesión o emergencias familiares para obtener dinero o bienes valiosos.</p>
+        </div>
+        <div data-aos="fade-right" class="p-4 rounded-lg bg-red-50">
+          <h3 class="font-bold text-red-800">Negocios Falsos</h3>
+          <p class="text-gray-700">Convencerte de invertir en negocios inexistentes o esquemas piramidales, prometiendo rendimientos irreales.</p>
+        </div>
+        <div data-aos="fade-right" class="p-4 rounded-lg bg-red-50">
+          <h3 class="font-bold text-red-800">Robo de Identidad</h3>
+          <p class="text-gray-700">Recopilar información personal para fines fraudulentos, abrir cuentas a tu nombre.</p>
+        </div>
+      </div>
 
-                <div data-aos="fade-up-left" class="mt-6">
-                  <h3 class="mb-3 text-xl font-bold text-gray-900">Señales de Alerta Digitales</h3>
-                  <div class="p-4 rounded-lg bg-orange-50">
-                    <ul class="pl-5 space-y-2 text-gray-700 list-disc">
-                      <li>Instalar aplicaciones de seguimiento sin consentimiento</li>
-                      <li>Exigir contraseñas de cuentas financieras</li>
-                      <li>Usar dispositivos compartidos para acceder a información bancaria</li>
-                      <li>Crear perfiles falsos en redes sociales para manipulación</li>
-                    </ul>
-                  </div>
-                </div>
-                <div data-aos="fade-up-left" class="mt-6">
-                  <h3 class="mb-3 text-xl font-bold text-gray-900">Señales de Alerta en el Comportamiento Digital</h3>
-                  <div class="p-4 rounded-lg bg-teal-50">
-                    <ul class="pl-5 space-y-2 text-gray-700 list-disc">
-                      <li>Monitorear tus actividades en línea sin tu conocimiento</li>
-                      <li>Presionar para que compartas información personal sensible</li>
-                      <li>Desaparecer mensajes o borrar conversaciones de forma sospechosa</li>
-                      <li>Reaccionar de manera exagerada si cuestionas su privacidad</li>
-                    </ul>
-                  </div>
-                </div>
+      <div data-aos="fade-up-left" class="mt-6">
+        <h3 class="mb-3 text-xl font-bold text-gray-900">Señales de Alerta Digitales</h3>
+        <div class="p-4 rounded-lg bg-orange-50">
+          <ul class="pl-5 space-y-2 text-gray-700 list-disc">
+            <li>Instalar aplicaciones de seguimiento sin consentimiento</li>
+            <li>Exigir contraseñas de cuentas financieras</li>
+            <li>Usar dispositivos compartidos para acceder a información bancaria</li>
+            <li>Crear perfiles falsos en redes sociales para manipulación</li>
+          </ul>
+        </div>
+      </div>
+      <div data-aos="fade-up-left" class="mt-6">
+        <h3 class="mb-3 text-xl font-bold text-gray-900">Señales de Alerta en el Comportamiento Digital</h3>
+        <div class="p-4 rounded-lg bg-teal-50">
+          <ul class="pl-5 space-y-2 text-gray-700 list-disc">
+            <li>Monitorear tus actividades en línea sin tu conocimiento</li>
+            <li>Presionar para que compartas información personal sensible</li>
+            <li>Desaparecer mensajes o borrar conversaciones de forma sospechosa</li>
+            <li>Reaccionar de manera exagerada si cuestionas su privacidad</li>
+          </ul>
+        </div>
+      </div>
 
-              </div>
+    </div>
 
-              <div>
-                <img data-aos="fade-up-left" src="../assets/img/01Manipulacion.jpg" alt="Señales de Advertencia"
-                  class="object-cover w-full mb-4 rounded-lg h-[450px]">
-                <div data-aos="fade-left" class="p-4 mb-4 rounded-lg bg-yellow-50">
-                  <h3 class="mb-2 text-xl font-bold text-yellow-800">Señales de Alerta Financiera</h3>
-                  <ul class="pl-5 space-y-2 text-gray-700 list-disc">
-                    <li>Presionar para que seas aval o firmes préstamos</li>
-                    <li>Ocultar su verdadera situación financiera y deudas</li>
-                    <li>Poner excusas para desempleo crónico</li>
-                    <li>Mostrar excesivo interés en tus bienes y herencia</li>
-                    <li>Inventar emergencias falsas para pedir dinero</li>
-                    <li>Negarse a contribuir a gastos compartidos</li>
-                    <li>Tener varias tarjetas de crédito al máximo</li>
-                    <li>Mentir sobre ingresos o situación laboral</li>
-                  </ul>
-                </div>
+    <div>
+      <img data-aos="fade-up-left" src="../assets/img/01Manipulacion.jpg" alt="Señales de Advertencia"
+        class="object-cover w-full mb-4 rounded-lg h-[450px]">
+      <div data-aos="fade-left" class="p-4 mb-4 rounded-lg bg-yellow-50">
+        <h3 class="mb-2 text-xl font-bold text-yellow-800">Señales de Alerta Financiera</h3>
+        <ul class="pl-5 space-y-2 text-gray-700 list-disc">
+          <li>Presionar para que seas aval o firmes préstamos</li>
+          <li>Ocultar su verdadera situación financiera y deudas</li>
+          <li>Poner excusas para desempleo crónico</li>
+          <li>Mostrar excesivo interés en tus bienes y herencia</li>
+          <li>Inventar emergencias falsas para pedir dinero</li>
+          <li>Negarse a contribuir a gastos compartidos</li>
+          <li>Tener varias tarjetas de crédito al máximo</li>
+          <li>Mentir sobre ingresos o situación laboral</li>
+        </ul>
+      </div>
 
-                <div data-aos="fade-up-left" class="p-4 rounded-lg bg-blue-50">
-                  <h3 class="mb-2 text-xl font-bold text-blue-800">Pasos de Protección</h3>
-                  <ul class="pl-5 space-y-2 text-gray-700 list-disc">
-                    <li>Monitorear regularmente el reporte de crédito</li>
-                    <li>Asegurar documentos importantes y contraseñas</li>
-                    <li>Documentar todas las transacciones financieras</li>
-                    <li>Configurar alertas de fraude con los bancos</li>
-                    <li>No ser aval ni compartir tarjetas de crédito</li>
-                    <li>Mantener cuentas bancarias separadas</li>
-                    <li>Confiar en tus instintos sobre comportamientos sospechosos</li>
-                    <li>Buscar asesoría legal si es necesario</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div data-aos="fade-up-left" class="p-4 rounded-lg bg-blue-50">
+        <h3 class="mb-2 text-xl font-bold text-blue-800">Pasos de Protección</h3>
+        <ul class="pl-5 space-y-2 text-gray-700 list-disc">
+          <li>Monitorear regularmente el reporte de crédito</li>
+          <li>Asegurar documentos importantes y contraseñas</li>
+          <li>Documentar todas las transacciones financieras</li>
+          <li>Configurar alertas de fraude con los bancos</li>
+          <li>No ser aval ni compartir tarjetas de crédito</li>
+          <li>Mantener cuentas bancarias separadas</li>
+          <li>Confiar en tus instintos sobre comportamientos sospechosos</li>
+          <li>Buscar asesoría legal si es necesario</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
         <!--  -->
-        <div class="mt-5 overflow-hidden bg-white rounded-lg shadow-lg">
-          <div class="p-6 bg-blue-500">
-            <h1 class="text-3xl font-bold text-white">Estrategias de Manipulación Emocional</h1>
-          </div>
-
-          <div class="p-6">
-            <div class="grid gap-8 md:grid-cols-2">
-              <div>
-                <h2 class="mb-4 text-2xl font-bold text-gray-900">Estrategias de Manipulación</h2>
-                <div class="space-y-4">
-                  <div data-aos="fade-right" class="p-4 rounded-lg bg-cyan-50">
-                    <h3 class="font-bold text-cyan-800">Celos Excesivos</h3>
-                    <p class="text-gray-700">Utilizar los celos para controlar a su pareja, creando inseguridades.</p>
-                  </div>
-                  <div data-aos="fade-right" class="p-4 rounded-lg bg-cyan-50">
-                    <h3 class="font-bold text-cyan-800">Desvalorización</h3>
-                    <p class="text-gray-700">Hacer que su pareja se sienta inferior y dependiente de su aprobación.</p>
-                  </div>
-                  <div data-aos="fade-right" class="p-4 rounded-lg bg-cyan-50">
-                    <h3 class="font-bold text-cyan-800">Promesas Vacías</h3>
-                    <p class="text-gray-700">Hacer promesas que nunca cumple para mantener la esperanza de
-                      reconciliación.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <img data-aos="fade-left" src="../assets/img/02Celos.jpg" alt="Señales de Manipulación"
-                  class="object-cover w-full mb-4 rounded-lg h-80">
-                <div data-aos="zoom-in-right" class="p-4 rounded-lg bg-cyan-50">
-                  <h3 class="mb-2 text-xl font-bold text-cyan-800">Consejos para Reconocer la Manipulación</h3>
-                  <p class="text-gray-700">Identificar estas tácticas es crucial para proteger tu salud mental y
-                    emocional.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="grid gap-8 mt-6 md:grid-cols-2">
-              <div>
-                <h2 class="mb-4 text-2xl font-bold text-gray-900">Motivos Detrás de la Manipulación</h2>
-                <div class="space-y-4">
-                  <div data-aos="fade-up" class="p-4 rounded-lg bg-cyan-50">
-                    <h3 class="font-bold text-cyan-800">Inseguridad Personal</h3>
-                    <p class="text-gray-700">La inseguridad personal puede llevar a la manipulación para sentirse
-                      superior.</p>
-                  </div>
-                  <div data-aos="fade-up" class="p-4 rounded-lg bg-cyan-50">
-                    <h3 class="font-bold text-cyan-800">Baja Autoestima</h3>
-                    <p class="text-gray-700">Algunas personas manipulan para elevar su autoestima a costa de otros.</p>
-                  </div>
-                  <div data-aos="fade-up" class="p-4 rounded-lg bg-cyan-50">
-                    <h3 class="font-bold text-cyan-800">Victimización Constante</h3>
-                    <p class="text-gray-700">Hacer que siempre parezca que ellos son los perjudicados para ganar
-                      simpatía y manipular tus emociones.</p>
-                  </div>
-
-                </div>
-              </div>
-
-              <div>
-                <h2 class="mb-4 text-2xl font-bold text-gray-900">Pasos para Superar la Manipulación</h2>
-                <div class="space-y-4">
-                  <div data-aos="fade-up" class="p-4 rounded-lg bg-green-50">
-                    <h3 class="mb-2 text-xl font-bold text-green-800">Establece Límites Claros</h3>
-                    <p class="text-gray-700">Definir límites es fundamental para proteger tu bienestar emocional.</p>
-                  </div>
-                  <div data-aos="fade-up" class="p-4 rounded-lg bg-green-50">
-                    <h3 class="mb-2 text-xl font-bold text-green-800">Busca Apoyo</h3>
-                    <p class="text-gray-700">Habla con amigos o profesionales que puedan brindarte apoyo emocional.</p>
-                  </div>
-                  <div data-aos="fade-up" class="p-4 rounded-lg bg-green-50">
-                    <h3 class="mb-2 text-xl font-bold text-green-800">Enfócate en Ti Mismo</h3>
-                    <p class="text-gray-700">Dedica tiempo a tus intereses y bienestar para fortalecer tu autoestima.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    
         <!--  -->
         <div class="mt-5 overflow-hidden bg-white rounded-lg shadow-lg">
           <div class="p-6 bg-purple-500">
@@ -297,6 +177,8 @@
                   </div>
                 </div>
               </div>
+
+              
             </div>
           </div>
         </div>
@@ -565,6 +447,87 @@
                     <h3 class="mb-2 text-xl font-bold text-blue-800">Confía en tu Instinto</h3>
                     <p class="text-gray-700">Si algo no se siente bien, no dudes en reevaluar la relación y tus
                       interacciones con esa persona.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5 overflow-hidden bg-white rounded-lg shadow-lg">
+          <div class="p-6 bg-blue-500">
+            <h1 class="text-3xl font-bold text-white">Estrategias de Manipulación Emocional</h1>
+          </div>
+
+          <div class="p-6">
+            <div class="grid gap-8 md:grid-cols-2">
+              <div>
+                <h2 class="mb-4 text-2xl font-bold text-gray-900">Estrategias de Manipulación</h2>
+                <div class="space-y-4">
+                  <div data-aos="fade-right" class="p-4 rounded-lg bg-cyan-50">
+                    <h3 class="font-bold text-cyan-800">Celos Excesivos</h3>
+                    <p class="text-gray-700">Utilizar los celos para controlar a su pareja, creando inseguridades.</p>
+                  </div>
+                  <div data-aos="fade-right" class="p-4 rounded-lg bg-cyan-50">
+                    <h3 class="font-bold text-cyan-800">Desvalorización</h3>
+                    <p class="text-gray-700">Hacer que su pareja se sienta inferior y dependiente de su aprobación.</p>
+                  </div>
+                  <div data-aos="fade-right" class="p-4 rounded-lg bg-cyan-50">
+                    <h3 class="font-bold text-cyan-800">Promesas Vacías</h3>
+                    <p class="text-gray-700">Hacer promesas que nunca cumple para mantener la esperanza de
+                      reconciliación.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <img data-aos="fade-left" src="../assets/img/02Celos.jpg" alt="Señales de Manipulación"
+                  class="object-cover w-full mb-4 rounded-lg h-80">
+                <div data-aos="zoom-in-right" class="p-4 rounded-lg bg-cyan-50">
+                  <h3 class="mb-2 text-xl font-bold text-cyan-800">Consejos para Reconocer la Manipulación</h3>
+                  <p class="text-gray-700">Identificar estas tácticas es crucial para proteger tu salud mental y
+                    emocional.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid gap-8 mt-6 md:grid-cols-2">
+              <div>
+                <h2 class="mb-4 text-2xl font-bold text-gray-900">Motivos Detrás de la Manipulación</h2>
+                <div class="space-y-4">
+                  <div data-aos="fade-up" class="p-4 rounded-lg bg-cyan-50">
+                    <h3 class="font-bold text-cyan-800">Inseguridad Personal</h3>
+                    <p class="text-gray-700">La inseguridad personal puede llevar a la manipulación para sentirse
+                      superior.</p>
+                  </div>
+                  <div data-aos="fade-up" class="p-4 rounded-lg bg-cyan-50">
+                    <h3 class="font-bold text-cyan-800">Baja Autoestima</h3>
+                    <p class="text-gray-700">Algunas personas manipulan para elevar su autoestima a costa de otros.</p>
+                  </div>
+                  <div data-aos="fade-up" class="p-4 rounded-lg bg-cyan-50">
+                    <h3 class="font-bold text-cyan-800">Victimización Constante</h3>
+                    <p class="text-gray-700">Hacer que siempre parezca que ellos son los perjudicados para ganar
+                      simpatía y manipular tus emociones.</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div>
+                <h2 class="mb-4 text-2xl font-bold text-gray-900">Pasos para Superar la Manipulación</h2>
+                <div class="space-y-4">
+                  <div data-aos="fade-up" class="p-4 rounded-lg bg-green-50">
+                    <h3 class="mb-2 text-xl font-bold text-green-800">Establece Límites Claros</h3>
+                    <p class="text-gray-700">Definir límites es fundamental para proteger tu bienestar emocional.</p>
+                  </div>
+                  <div data-aos="fade-up" class="p-4 rounded-lg bg-green-50">
+                    <h3 class="mb-2 text-xl font-bold text-green-800">Busca Apoyo</h3>
+                    <p class="text-gray-700">Habla con amigos o profesionales que puedan brindarte apoyo emocional.</p>
+                  </div>
+                  <div data-aos="fade-up" class="p-4 rounded-lg bg-green-50">
+                    <h3 class="mb-2 text-xl font-bold text-green-800">Enfócate en Ti Mismo</h3>
+                    <p class="text-gray-700">Dedica tiempo a tus intereses y bienestar para fortalecer tu autoestima.
+                    </p>
                   </div>
                 </div>
               </div>

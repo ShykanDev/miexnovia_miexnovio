@@ -2,32 +2,34 @@
     <div class="">
         <header>
             <div class="w-full overflow-hidden font-poppins">
-                <nav class="fixed z-50 w-full text-black bg-white shadow-md">
+                <nav class="fixed z-50 w-full text-black bg-white shadow-md ">
                     <a class="absolute z-50 w-6 lg:top-2 lg:right-0 right-2 lg:w-auto" href="https://www.prasadam.mx">
                         <img class="w-8 " src="../assets/img/logoPrasadam.png" alt="">
                     </a>
-                    <div class="px-1 py-1 mx-auto ">
+                    <div class="px-1 py-1 mx-auto">
                         <!-- <div class="relative flex items-center space-x-1"> -->
                             <router-link :class="{'animate-fade-down' : title1, 'opacity-0 ' : title2 }" to="/" class="absolute text-xl font-bold text-purple-800">miexnovia.com</router-link>
                             <router-link :class="{'animate-fade-down' : title2, 'opacity-0 ' : title1 }" to="/" class="absolute text-xl font-bold text-sky-800">miexnovio.com</router-link>
                         <!-- </div> -->
-                        <div class="flex flex-col items-end justify-end h-16 pb-1">
-                            <div class="z-40 flex items-baseline w-full mt-2 font-medium bg-white justify-evenly font-poppins">
-                                <router-link :class="{ 'bg-emerald-600 text-white': route.name === 'home', 'text-gray-700 hover:text-white hover:bg-emerald-500': route.name !== 'home' }" :to="{name: 'home'}"
-                                    class="px-2 py-1 rounded-md autofill: ">Inicio</router-link>
-                                    <div class="flex items-center gap-1">
+                        <div class="flex flex-col items-end justify-end pb-1 min-h-16">
+                            <div class="z-40 flex flex-wrap items-baseline justify-center w-full mt-2 space-y-1 font-medium font-poppins">
+                                <div class="flex flex-wrap items-center justify-center gap-1 pr-1 mt-5">
+                                        <router-link :class="{ 'bg-emerald-600 text-white': route.name === 'home', 'text-gray-700 hover:text-white hover:bg-emerald-500': route.name !== 'home' }" :to="{name: 'home'}"
+                                            class="px-2 py-1 rounded-md autofill: ">Inicio</router-link>
                                         <router-link :class="{ 'bg-purple-600 text-white': route.name === 'exnovia', 'text-gray-700 hover:text-white hover:bg-purple-500': route.name !== 'exnovia' }" :to="{name: 'exnovia'}"
                                         class="px-2 py-1 rounded-md autofill: ">Exnovia</router-link>
                                         <router-link  :class="{ 'bg-sky-800 text-white': route.name === 'exnovio', 'text-gray-700 hover:text-white hover:bg-sky-500': route.name !== 'exnovio' }"  :to="{name: 'exnovio'}"
                                         class="px-2 py-1 rounded-md autofill: ">Exnovio</router-link>
+                                        <router-link :class="{ 'bg-orange-600 text-white': route.name === 'comments', 'text-gray-700 hover:text-white hover:bg-orange-500': route.name !== 'comments' }" :to="{name: 'comments'}"
+                                        class="px-2 py-1 rounded-md autofill: ">Comentarios</router-link>
                                         <router-link :class="{ 'bg-orange-600 text-white': route.name === 'about', 'text-gray-700 hover:text-white hover:bg-orange-500': route.name !== 'exnovia' }" :to="{name: 'about'}"
                                         class="px-2 py-1 rounded-md autofill: ">Nosotros</router-link>
-                                        <router-link :class="{ 'bg-rose-600 text-white': route.name === 'comments', 'text-gray-700 hover:text-white hover:bg-rose-500': route.name !== 'comments' }" :to="{name: 'comments'}"
-                                        class="px-2 py-1 rounded-md autofill: ">Comentarios</router-link>
+                                        <!-- <router-link :class="{ 'bg-rose-600 text-white': route.name === 'comments', 'text-gray-700 hover:text-white hover:bg-rose-500': route.name !== 'comments' }" :to="{name: 'comments'}"
+                                        class="px-2 py-1 rounded-md autofill: ">Comentarios</router-link> -->
                                     </div>
-                                    <div v-if="!useUserLogin().getUser" class="flex items-center gap-1 ">
+                                    <div v-if="!useUserLogin().getUser" class="flex items-center gap-2 ">
                                         <router-link :to="{name: 'login'}" class="px-2 py-1 border border-gray-500 rounded-md ">Iniciar sesión</router-link>
-                                        <router-link :to="{name: 'register'}" class="px-2 py-1 text-white bg-orange-600 rounded-md ">Registrarse</router-link>
+                                        <router-link :to="{name: 'register'}" class="px-2 py-1 text-white bg-purple-600 rounded-md">Registrarse</router-link>
                                     </div>
                                     <div v-if="useUserLogin().getUser" class="flex items-center gap-1">
                                         <p>Hola, {{ useUserInfo().getUserName }}!</p>
@@ -42,7 +44,7 @@
             <slot name="main">
                 
             </slot>
-            <div class="relative py-6 text-white rounded-lg shadow-md bg-slate-800 px-7">
+            <div class="relative z-30 py-6 text-white rounded-lg shadow-md bg-slate-800 px-7">
                 <img src="../assets/img/sslCert01.png" class="absolute w-20 top-2 right-1" alt="">
   <h3 class="mb-4 text-3xl font-bold text-left text-orange-400">Contacto</h3>
 
@@ -87,7 +89,7 @@
 </div>
 
         </main>
-        <footer>
+        <footer class="z-30">
 
         </footer>
     </div>
