@@ -5,7 +5,7 @@ import router from './router';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { FaFlag, RiZhihuFill, FaPhoneAlt, HiMail, LaWhatsapp, IoLocation,BiPencilFill,FaUserAlt,IoCalendar,CoFacebook,CoWhatsapp,CoTwitter,CoInstagram,HiChatAlt2,HiSolidUserGroup } from "oh-vue-icons/icons";
+import { FaFlag, RiZhihuFill, FaPhoneAlt, HiMail, LaWhatsapp, IoLocation,BiPencilFill,FaUserAlt,IoCalendar,CoFacebook,CoWhatsapp,CoTwitter,CoInstagram,HiChatAlt2,HiSolidUserGroup,LaUsersSolid } from "oh-vue-icons/icons";
 import { initializeApp } from "firebase/app";
 import { createPinia } from 'pinia';
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
@@ -14,7 +14,7 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 AOS.init();
 
 // Add icons to Oh Vue Icons
-addIcons(FaFlag, RiZhihuFill, FaPhoneAlt, HiMail, LaWhatsapp, IoLocation,BiPencilFill,FaUserAlt,IoCalendar,CoFacebook,CoWhatsapp,CoTwitter,CoInstagram,HiChatAlt2,HiSolidUserGroup);
+addIcons(FaFlag, RiZhihuFill, FaPhoneAlt, HiMail, LaWhatsapp, IoLocation,BiPencilFill,FaUserAlt,IoCalendar,CoFacebook,CoWhatsapp,CoTwitter,CoInstagram,HiChatAlt2,HiSolidUserGroup,LaUsersSolid);
 
 // Firebase configuration
 const firebaseConfig = {

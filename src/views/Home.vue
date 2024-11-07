@@ -482,7 +482,21 @@
                 </div>
               </div>
             </section>
-
+            <section class="py-8 text-center">
+    <h2 class="mb-4 text-2xl font-bold">¿Quieres conocer más sobre nosotros?</h2>
+    <section class="flex justify-center w-full my-6 space-x-4">
+      <div class="flex items-center justify-center p-1 px-2 bg-orange-700 rounded-lg hover:bg-orange-800">
+        <router-link
+        :to="{ name: 'about' }"
+        class="px-4 py-2 text-white transition duration-200"
+        >
+        Sobre nosotros
+        
+      </router-link>
+      <v-icon name="la-users-solid" scale="1.4"  class="text-white"/>
+    </div>
+  </section>
+  </section>
             <h3 class="mt-6 text-2xl font-bold text-center text-sky-900 font-poppins">Te puede interesar...</h3>
             <section class="flex justify-center w-full my-6 space-x-4"> <!-- ads section -->
               <div
