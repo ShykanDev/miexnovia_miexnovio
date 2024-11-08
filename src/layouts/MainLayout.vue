@@ -11,7 +11,7 @@
                     </a>
                     <div class="px-1 py-1 mx-auto">
                         <!-- <div class="relative flex items-center space-x-1"> -->
-                            <router-link :class="{'animate-fade-down' : title1, 'opacity-0 ' : title2 }" to="/" class="absolute text-xl font-bold text-purple-800">miexnovia.com</router-link>
+                            <router-link :class="{'animate-fade-down' : title1, 'opacity-0 ' : title2 }" to="/" class="absolute text-xl font-bold text-purple-800">miexnovia.com.mx</router-link>
                             <router-link :class="{'animate-fade-down' : title2, 'opacity-0 ' : title1 }" to="/" class="absolute text-xl font-bold text-sky-800">miexnovio.com</router-link>
                         <!-- </div> -->
                         <div class="flex flex-col items-end justify-end pb-1 min-h-16">
