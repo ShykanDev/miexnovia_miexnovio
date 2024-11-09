@@ -75,8 +75,7 @@
                 </p>
             </div>
         </div>
-        <!-- politica de privacidad -->
-         <p class="text-gray-600">Deseas conocer nuestra politica de cookies? <router-link to="/cookies" class="text-orange-600 hover:text-orange-800">Ver Politica</router-link></p>
+
     </div>
 </section>
 

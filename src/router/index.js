@@ -33,7 +33,7 @@ const router = createRouter({
       name: 'comments',
       component: () => import('../views/CommentsSectionView.vue'),
       meta:{
-        loginRequired: true,
+        loginRequired: false,
       }
     },
     {
@@ -60,13 +60,7 @@ const router = createRouter({
         loginRequired: false,
       }
     },
-    {
-      path: '/cookies',
-      name: 'cookies',
-      component: () => import('../views/CookiesView.vue'),
-      meta:{
-        loginRequired: false,
-      }}
+
   ],
   scrollBehavior() {
     return { top: 0 };

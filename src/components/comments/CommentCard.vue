@@ -21,22 +21,14 @@
 
             <!-- Reply Button -->
             <div class="flex justify-center gap-1 px-3 py-1 text-white rounded-lg bg-sky-800 min-w-24 max-w-32">
-                <button 
-                    @click="toggleReply" 
+                <button  
                     class="text-sm font-semibold hover:underline focus:outline-none">
                     Responder
                 </button>
                 <v-icon name="bi-pencil-fill" class="text-white" />
             </div>
 
-            <!-- Reply List -->
-
-            <!-- <section class="flex flex-col gap-2 my-6">
-                <div class="gap-2 bg-red-500" v-for="(response, index) in responses" :key="index">
-                    <p>{{ response.nombre}} respondió:</p>
-                    <p>"{{ response.contenido }}"</p>
-                </div>
-            </section> -->
+   
 
             <section class="flex flex-col gap-4 my-6">
     <div 
@@ -97,14 +89,6 @@ const formatDate = (fecha: Timestamp) => {
 }
 
 
-// Estado para manejar la visibilidad del textarea
-const showReply = ref(false);
-const replyContent = ref('');
-
-// Función para alternar la visibilidad del campo de respuesta
-const toggleReply = () => {
-    showReply.value = !showReply.value;
-};
 
 // Función para enviar la respuesta
 const submitReply = () => {

@@ -329,24 +329,13 @@
                   dinero</strong>
                 personas es capaz de manipular a sus parejas, para llevarlos a problemas de un nivel muy alto.
               </p>
-              <h3 class="mb-4 text-xl font-semibold text-sky-950">
-                Te invitamos a compartir tus experiencias y a dejar un comentario para ayudar a otros a reconocer las
-                señales de alerta en sus relaciones.
-
-              </h3>
+    
               <div class="flex justify-center">
                 <img class="w-[600px] rounded-md " src="../assets/img/comentandoLanscape.jpg" alt="">
               </div>
             </div>
 
-            <div class="flex justify-center w-full ">
-              <router-link :to="{ name: 'comments' }"
-                class="flex items-center gap-2 px-4 py-2 mt-3 text-white rounded-md bg-sky-800">
-                Ir a comentarios
-                <v-icon name="hi-chat-alt-2" scale="1.5" class="text-white" />
 
-              </router-link>
-            </div>
             
             <section class="mb-10 text-center">
               <hr class="mt-3">
@@ -382,10 +371,9 @@
                 <img alt="Imagen de una estrella dorada que simboliza unicidad" class="mx-auto mb-4 w-44"
                   src="../assets/img/coupleSite.png" />
                 <h3 class="mb-2 text-xl font-bold">
-                  Interactua con otros
+                  Aprende de las experiencias de otros
                 </h3>
                 <p>
-                  Esperamos que puedas compartir tus experiencias con otros, y aprendas al igual de otras personas.
                 </p>
               </div>
             </section>
@@ -543,20 +531,7 @@
               </div>
             </section>
 
-            <div
-            v-if="showCookiesBanner"
-              class="fixed bottom-0 left-0 right-0 flex flex-col items-center justify-center w-full gap-4 p-4 text-center text-white bg-gray-800 sm:flex-row">
-              <p class="text-sm">
-                Usamos cookies para mejorar tu experiencia de navegación. Al continuar en nuestro sitio, aceptas nuestro
-                uso de cookies.
-                <RouterLink :to="{ name: 'cookies' }"
-                  class="text-blue-400 underline hover:text-blue-300">Más información</RouterLink>.
-              </p>
-              <button @click="acceptCookies" class="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-500">
-                Aceptar
-              </button>
-            </div>
-
+  
           </div>
         </section>
       </template>

@@ -29,14 +29,11 @@
                                         class="hidden px-2 py-1 rounded-md md:block">Nosotros</router-link>
                                         <!-- <router-link :class="{ 'bg-rose-600 text-white': route.name === 'comments', 'text-gray-700 hover:text-white hover:bg-rose-500': route.name !== 'comments' }" :to="{name: 'comments'}"
                                         class="px-2 py-1 rounded-md autofill: ">Comentarios</router-link> -->
+
+                                    <div class="flex items-center gap-1">
+                                        <p>Bienvenido!</p>
                                     </div>
-                                    <div v-if="!useUserLogin().getUser" class="flex items-center gap-2 ">
-                                        <router-link :to="{name: 'login'}" class="px-2 py-1 border border-gray-500 rounded-md ">Iniciar sesión</router-link>
-                                        <router-link :to="{name: 'register'}" class="px-2 py-1 text-white bg-purple-600 rounded-md">Registrarse</router-link>
-                                    </div>
-                                    <div v-if="useUserLogin().getUser" class="flex items-center gap-1">
-                                        <p>Hola, {{ useUserInfo().getUserName }}!</p>
-                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
