@@ -44,22 +44,7 @@ const router = createRouter({
         loginRequired: false,
       }
     },
-    {
-      path: '/login',
-      name: 'login',
-      component: () => import('../views/LoginViewV2.vue'),
-      meta:{
-        loginRequired: false,
-      }
-    },
-    {
-      path: '/register',
-      name: 'register',
-      component: () => import('../views/RegisterView.vue'),
-      meta:{
-        loginRequired: false,
-      }
-    },
+
 
   ],
   scrollBehavior() {
