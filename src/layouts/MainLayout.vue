@@ -10,10 +10,30 @@
                         <img class="w-8 " src="../assets/img/logoPrasadam.png" alt="">
                     </a>
                     <div class="px-1 py-1 mx-auto">
-                        <!-- <div class="relative flex items-center space-x-1"> -->
-                            <router-link :class="{'animate-fade-down' : title1, 'opacity-0 ' : title2 }" to="/" class="absolute text-xl font-bold text-purple-800">miexnovia.com.mx</router-link>
-                            <router-link :class="{'animate-fade-down' : title2, 'opacity-0 ' : title1 }" to="/" class="absolute text-xl font-bold text-sky-800">miexnovio.com</router-link>
-                        <!-- </div> -->
+                        <router-link 
+            :class="{'animate-fade-down': visibleTitle === 1, 'opacity-0': visibleTitle !== 1}" 
+            to="/" 
+            class="absolute text-xl font-bold text-purple-800">
+            miexnovia.com.mx
+        </router-link>
+        <router-link 
+            :class="{'animate-fade-down': visibleTitle === 2, 'opacity-0': visibleTitle !== 2}" 
+            to="/" 
+            class="absolute text-xl font-bold text-sky-800">
+            miexnovio.com
+        </router-link>
+        <router-link 
+            :class="{'animate-fade-down': visibleTitle === 3, 'opacity-0': visibleTitle !== 3}" 
+            to="/" 
+            class="absolute text-xl font-bold text-green-800">
+            mipareja.net
+        </router-link>
+        <router-link 
+            :class="{'animate-fade-down': visibleTitle === 4, 'opacity-0': visibleTitle !== 4}" 
+            to="/" 
+            class="absolute text-xl font-bold text-red-800">
+            miexpareja.net
+        </router-link>
                         <div class="flex flex-col items-end justify-end pb-1 min-h-16">
                             <div class="z-40 flex flex-wrap items-baseline justify-center w-full mt-2 space-y-1 font-medium font-poppins">
                                 <div class="flex flex-wrap items-center justify-center gap-1 pr-1 mt-5">
@@ -107,42 +127,41 @@ import { useUserLogin } from '../stores/UserLogin';
 import { useUserInfo } from '../stores/UserInfo';
 
 
-const title1 = ref();
-const title2 = ref();
+const visibleTitle = ref(1); // 1, 2, 3 o 4 según el enlace visible.
 
-const setTitle = () => {
+        const setTitle = () => {
+            switch (route.name) {
+                case 'home':
+                case 'exnovia':
+                    visibleTitle.value = 1;
+                    break;
+                case 'exnovio':
+                    visibleTitle.value = 2;
+                    break;
+                case 'pareja':
+                    visibleTitle.value = 3;
+                    break;
+                case 'expareja':
+                    visibleTitle.value = 4;
+                    break;
+                default:
+                    visibleTitle.value = 1;
+                    break;
+            }
+        };
 
-   switch (route.name) {
-        case 'home':
-            title1.value = true;
-            title2.value = false;
-            break;
-        case 'exnovia':
-            title1.value = true;
-            title2.value = false;
-            break;
-        case 'exnovio':
-            title1.value = false;
-            title2.value = true;
-            break;
-        default:
-            title1.value = true;
-            title2.value = false;
-            break;
-    }
-}
+        const switchTitle = () => {
+            visibleTitle.value = visibleTitle.value < 4 ? visibleTitle.value + 1 : 1;
+        };
 
-const switchTitle = () => {
-    
-        title1.value = !title1.value;
-        title2.value = !title2.value;
+        onMounted(() => {
+            setTitle();
+            setInterval(switchTitle, 2000);
+        });
 
-}
 
-onMounted(() => {
-    setTitle();
-    setInterval(switchTitle, 2000);
-})
+
+
 </script>
 
 <style scoped></style>
